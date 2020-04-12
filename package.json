@@ -1,0 +1,32 @@
+{
+  "name": "react_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client", 
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmartinez92/react_upload.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kmartinez92/react_upload/issues"
+  },
+  "homepage": "https://github.com/kmartinez92/react_upload#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
